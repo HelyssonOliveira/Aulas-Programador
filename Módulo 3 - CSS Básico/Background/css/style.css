@@ -1,0 +1,45 @@
+div{
+    background-image: url(../img/thumb-1920-702742.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    
+    width: 1200px;
+    height: 2000px;
+}
+.test1{
+    background-image: url(../img/thumb-1920-702742.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: local;
+
+    overflow: scroll;
+    
+    width: 400px;
+    height: 200px;
+}
+.test2{
+    background-image: url(../img/thumb-1920-702742.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+    overflow: scroll;
+    
+    width: 400px;
+    height: 200px;
+}
+.test3{
+    background-image: url(../img/thumb-1920-702742.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+
+    overflow: scroll;
+    
+    width: 400px;
+    height: 200px;
+}
+p{
+    font-size: 12ch;
+}

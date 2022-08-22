@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos - Parte 2 de 3 (DOM Events)</title>
+
+    <script>
+        window.onload = function () {
+
+            let d1 = document.getElementById("d1")
+            console.log(d1.children)
+            console.log(d1.parentElement)
+            console.log("-")
+            // 
+            //
+            let h1 = document.getElementsByTagName("h1")
+            for (let h of h1) {
+                console.log(h)
+                h.addEventListener("click", parente)
+            }
+            function parente(e) {
+                let t = e.target
+                console.log(t.parentElement)
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <h1 id="d1">Title</h1>
+    <p>paragrafo</p>
+
+    <h1 id="d2">Title 2</h1>
+    <p>paragrafo 2</p>
+</body>
+
+</html>

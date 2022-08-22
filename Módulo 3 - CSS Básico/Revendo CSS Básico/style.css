@@ -1,0 +1,92 @@
+/* ESTILO DE LINKS */
+a{
+    text-decoration: overline underline;
+    color: black;
+    background: white;
+    font-size: 1.5pc;
+    font-family: monospace;
+    font-weight: bolder;
+}
+a:visited{
+    color: white;
+    background: black;
+}
+a:hover{
+    color: red;
+    background: white;
+}
+a:active{
+    color: teal;
+    background: black;
+}
+/* ---------------------- */
+.ajuste-de-texto{
+    text-align: justify;
+    text-decoration: underline /*overline line-through*/;
+    text-transform: capitalize /*uppercase lowercase*/;
+    text-shadow: 0.5px 0.5px;
+    text-indent: 50px;
+
+    font-size: 1.2rem;
+    font-family: arial;
+    font-weight: 100;
+    font-variant: small-caps;
+
+    letter-spacing: 5px;
+    word-spacing: 5px;
+    line-height: 20px;
+}
+/* ---------------------- */
+.background{
+    background: url('../Background/img/thumb-1920-702742.jpg'), no-repeat;
+    background-size: cover;
+    background-position-x: 1pc;
+    background-position-y: 1pc;
+}
+/* ---------------------- */
+.border-e-box-model{
+    border: solid;
+    border-width: thick;
+    border-radius: 10px;
+    border-color: rgb(0, 119, 255);
+    border-top: dashed;
+    border-left: dotted;
+    border-right: hidden;
+    
+    outline-style: dotted;
+    outline: 5px solid red;
+    
+    box-sizing: border-box;
+    
+    width: 90%;
+    padding: 10px;
+    margin: auto;
+}
+.listas{
+    width: 90%;
+    margin: auto;
+    padding: 5px;
+    background: rgb(185, 180, 180);
+}
+ul{
+    list-style-position: inside;
+    list-style-image: url(img/Insta.png);
+    
+    background-color: white;
+    margin: auto;
+    padding: 5px;
+}
+ol{
+    list-style-position: outside;
+    list-style-image: url(img/Twitter.png);
+
+    background-color: white;
+    margin: auto;
+    padding: 5px;
+    padding-left: 40px;
+}
+li{
+    background-color: violet;
+    margin-top: 10px;
+}
+/*  */

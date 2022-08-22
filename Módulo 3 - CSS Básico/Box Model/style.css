@@ -1,0 +1,34 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    background: red;
+    padding: 10px;
+    border: 5px solid blue;
+    margin: 10px;
+}
+.content{
+    background: #ddd;
+    outline: 5px solid green;
+    padding: 5px;
+}
+
+/*COM box-sizing: border box;*/
+.square{
+    width: 400px;
+    height: 240px;
+    background: yellow;
+    border: 10px solid blue;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/*SEM box-sizing: border box;*/
+.square2{
+    width: 400px;
+    height: 200px;
+    background: yellow;
+    border: 10px solid blue;
+    padding: 10px;
+}

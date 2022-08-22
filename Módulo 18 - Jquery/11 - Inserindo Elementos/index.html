@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>jQuery</title>
+</head>
+
+<body>
+    <h1>Minha lista 1</h1>
+    <h2>Minha lista 2</h2>
+
+    <input id="novo" name="name" value="Value">
+    
+    <ul id="lista1">
+        <li key=1 class="item1" name="item">Item 1</li>
+        <li key=2 class="item2" name="item">Item 2</li>
+        <li key=3 class="item3" name="item">Item 3</li>
+        <li key=4 class="item4" name="item">Item 4</li>
+        <li key=5 class="item5" name="item">Item 5</li>
+    </ul>
+
+   <script>
+        // $("#lista1").html($("#lista1").html() + "<li>teste</li>")
+
+        // ou
+
+        // let list1 = $("#lista1")
+        // let items = list1.html()
+        // list1.html(items + "<li>teste</li>")
+
+        // ou
+
+        $("#lista1").append("<li>adiciona novo item no FINAL da lista</li>")
+        $("#lista1").prepend("<li>adiciona novo item no INÍCIO da lista</li>")
+        
+        // 
+        
+        $("#lista1").before("<li>adiciona novo item ANTES da lista</li>")
+        $("#lista1").after("<li>adiciona novo item DEPOIS da lista</li>")
+        
+        </script>
+</body>
+</html>

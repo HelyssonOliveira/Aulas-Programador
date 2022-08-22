@@ -1,0 +1,34 @@
+*{ margin: 0; padding: 0; }
+body { text-align: center; }
+.square {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(236, 236, 100);
+    display: inline-block;
+    border: 1px solid rgb(255, 0, 0);
+}
+/* O */
+.o { position: relative; }
+.o::after {
+    /*  content: "\1F6E1";  */
+    content: "🛡️";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    font-size: 50px;
+    line-height: 100px;
+}
+/* X */
+.x { position: relative; }
+.x::after {
+    content: "\274C";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    font-size: 50px;
+    line-height: 100px;
+}

@@ -1,0 +1,39 @@
+.container{
+    display: flex;
+    flex-direction: row;    
+    flex-wrap: wrap-reverse; 
+
+    /* ALINHA OS ITENS NA HORIZONTAL */
+    justify-content: flex-start;
+    /*               flex-star    
+                     flex-end    
+                     center
+                     space-between
+                     space-around 
+                     space-evenly       */
+                     
+    /* ALINHA OS ITENS NA VERTICAL */
+    align-items: flex-end;
+/*               flex-end    
+                 flex-start    
+                 center
+                 stretch      */  
+    background-color: darkgrey;
+    height: 480px;
+    color: white;
+}
+
+.r1{
+    background-color: red;
+}
+.r2{
+    background-color: blue;
+}
+.r3{
+    background-color: green;
+}
+
+.rect{
+    width: 300px;
+    height: 150px;
+}

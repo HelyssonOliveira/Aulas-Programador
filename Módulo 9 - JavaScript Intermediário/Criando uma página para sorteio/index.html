@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        // Explo 01
+        // function sortear(){
+        //     let numberDePessoas = 100
+        //     let numberSorteado = Math.round(Math.random() * numberDePessoas)
+        //     document.getElementById("d").innerHTML = numberSorteado
+        // }
+
+        // Explo 02
+        let pessoas = ["Helysson", "Hevelly", "Heytor", "Maria", "Jeovana", "Cleudiane", "Gabi"]
+        function sortear(){
+            let numeroDePessoas = pessoas.length 
+            let numeroSorteado = Math.floor(Math.random() * numeroDePessoas)
+            document.getElementById("ps").innerHTML = pessoas[numeroSorteado]
+        }
+    </script>
+</head>
+
+<body>
+    <h1 id="ps"></h1>
+    <button onclick="sortear()">Sortear</button>
+</body>
+
+</html>

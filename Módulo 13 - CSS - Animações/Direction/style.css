@@ -1,0 +1,21 @@
+@keyframes changeColor{
+    0%{background-color: red; width: 200px;}
+    25%{background-color: green;}
+    50%{background-color: yellow; width: 500px;}
+    100%{background-color: blue; width: 200px;}
+}
+.box{
+    width: 200px; height: 200px;
+    border: solid;
+
+    animation-name: changeColor;
+    animation-duration: 3s;
+    animation-delay: 1s;
+    animation-iteration-count: 2;
+
+    /* Inverte a animação, no caso iria de 100% para 0%(do BLUE para RED) */
+    /* animation-direction: reverse; */
+    
+    /* Alterna do vermelho pro azul e do azul pro vermelho */
+    animation-direction: alternate;
+}

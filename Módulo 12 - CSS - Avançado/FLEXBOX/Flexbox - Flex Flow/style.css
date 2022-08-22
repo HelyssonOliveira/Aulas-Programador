@@ -1,0 +1,29 @@
+.container{
+    display: flex;
+    /* flex-direction: column;*/
+    /* flex-wrap: wrap;  */ /* Quebra a linha quando a tela diminui movendo itens pra baixo*/
+
+    /* junção de FLEX-DIRECTION e FLEX-WRAP */
+    flex-flow: row-reverse wrap;
+/*             column-reverse wrap-reverse;
+               row nowrap; */
+
+    background-color: darkgrey;
+    height: 480px;
+    color: white;
+}
+
+.r1{
+    background-color: red;
+}
+.r2{
+    background-color: blue;
+}
+.r3{
+    background-color: green;
+}
+
+.rect{
+    width: 150px;
+    height: 150px;
+}

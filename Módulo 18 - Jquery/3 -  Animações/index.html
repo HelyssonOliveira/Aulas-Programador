@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #square, #square2, #square3, #square4, #square5, #square6, #square7, #square8{
+            width: 300px; height: 300px;
+            background-color: red; 
+            display: none;
+        }
+        #square2, #square6, #square8{display: block;}
+    </style>
+
+</head>
+<body>
+    <button id="button">Square 01 | Fade In(apareçer)</button>
+    <div id="square"></div>
+<br>
+    <button id="button2">Square 02 | Fade Out(sumir)</button>
+    <div id="square2"></div>
+<br>
+    <button id="button3">Square 03 | Fade Toggle(aparecer/sumir)</button>
+    <div id="square3"></div>
+    <br>
+    <button id="button4">Square 04 | Fade To (aparecer com 50% de opacidade)</button>
+    <div id="square4"></div>
+<br>
+    <button id="button5">Square 05 | Slide Down (deslizar pra baixo)</button>
+    <div id="square5"></div>
+<br>
+    <button id="button6">Square 06 | Slide Up (deslizar pra cima)</button>
+    <div id="square6"></div>
+<br>
+    <button id="button7">Square 07 | Slide Toggle (deslizar pra cima/baixo)</button>
+    <div id="square7"></div>
+<br>
+    <button id="button8">Square 08 | Animate</button>
+    <button id="stop">Stop</button>
+    <div id="square8"></div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        // Lição 1
+        $('#button').click(() => {
+            $('#square').fadeIn()
+        })
+
+        $('#button2').click(() => {
+            $('#square2').fadeOut(1000)
+        })
+
+        $("#button3").click(() => {
+            $('#square3').fadeToggle()
+        })
+
+        $('#button4').click(() => {
+            $('#square4').fadeTo(1000, 0.5)
+        })
+
+        $('#button5').click(() => {
+            $('#square5').slideDown()
+        })
+
+        $('#button6').click(() => {
+            $('#square6').slideUp()
+        })
+
+        $('#button7').click(() => {
+            $('#square7').slideToggle()
+        })
+
+        $('#button8').click(() => {
+            $('#square8').animate(
+                {
+                    width: 500, height: 500
+                }, 3000)
+        })
+
+        $('#stop').click(() => {
+            $('#square8').stop()
+        })
+    </script>
+</body>
+</html>

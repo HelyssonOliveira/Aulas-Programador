@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .quadro {
+            position: absolute;
+            width: 500px;
+            height: 500px;
+            border: 1px solid gray;
+            left: 20%;
+        }
+        .quadrado {
+            width: 100px;
+            height: 100px;
+        }
+        /*  */
+        .quadrado-red {
+            position: absolute;
+            
+            background-color: red;
+        }
+/* Position: STATIC só pode mover os quadrados usando ( margin : *left, right, top, bottom* ). 
+Se move de acordo com o container em que esta dentro */
+        .quadrado-blue {
+            position: static;
+            
+            background-color: blue;
+            margin-left: 50px;
+            margin-top: 50px;
+        }
+/* Position ABSOLUTE: move os quadrados de acordo com o container que não seja Position: static.
+Pode mover os quadrados usando (left, right, top, bottom) */
+        .quadrado-green {
+            position: absolute;
+            
+            background-color: green;
+            left: 100px;
+            top: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="quadro">
+        <div class="quadrado quadrado-red"></div>
+        <div class="quadrado quadrado-blue"></div>
+        <div class="quadrado quadrado-green"></div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            background-color: red;
+            overflow: auto;
+        }
+        .div1{
+            overflow: hidden;
+        }
+        /*  */
+        .div2{
+            background-color: none;
+            color: none;
+            overflow: scroll;
+            width: 500px;
+            height: 500px;
+        }
+        /*  */
+        .div3{
+            overflow: visible;
+        }
+        img{
+            width: 600px;
+        }
+    </style>
+</head>
+<body>
+    <div>DIV</div>
+    <div class="div1">DIV 1 OVERFLOW HIDDEN <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, mollitia quasi! Incidunt dignissimos, excepturi architecto eaque et cum minima blanditiis? Autem consequuntur commodi quaerat qui iusto maiores culpa deleniti aliquam.</div>
+    <div class="div2">DIV 2 OVERFLOW SCROLL <br>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam itaque quisquam adipisci amet doloribus cum! Quisquam laudantium magnam blanditiis aut sapiente voluptatum voluptates quibusdam aliquam, nesciunt adipisci recusandae architecto non.<br><img src="thumb-1920-702742.jpg" alt=""><br><img src="thumb-1920-702742.jpg" alt=""></div>
+    <div class="div3">DIV 3 OVERFLOW VISIBLE Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum ex magni minima vero iste exercitationem aspernatur enim omnis, ad porro excepturi eligendi saepe modi quia, maxime assumenda. Optio, quae qui?</div>
+</body>
+</html>

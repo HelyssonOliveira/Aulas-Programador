@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>jQuery</title>
+</head>
+
+<body>
+    <h1>Minha lista 1</h1>
+    <h2>Minha lista 2</h2>
+
+    <input id="novo" name="name" value="Value">
+    
+    <ul id="lista1">
+        <li class="item1" name="item">Item 1</li>
+        <li class="item2" name="item">Item 2</li>
+        <li class="item3" name="item">Item 3</li>
+        <li class="item4" name="item">Item 4</li>
+        <li class="item5" name="item">Item 5</li>
+    </ul>
+
+   <script>
+        // console.log($('h1').text('Lista de compras'))
+        // console.log($('h2').html('<li>Lista de compras 2</li>'))
+        
+        // console.log($('#novo').val('Valor'))
+        // console.log($('#novo').attr("name", 'NovoName'))
+        
+        // console.log($("li").attr("name", function(i){
+        //     return "Item " + i
+        // }))
+
+        // console.log($("li").attr("name", function(i, oValue){
+        //     return oValue + i
+        // }))
+
+        $("input").attr("maxlength", 5).attr("type", "password")
+
+    </script>
+</body>
+</html>

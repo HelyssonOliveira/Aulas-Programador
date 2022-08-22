@@ -1,0 +1,28 @@
+.container{
+    color: white;  
+    display: grid;
+    grid-template: auto / 1fr 1fr;
+
+    /* define a margin entre as LINHAS */
+    /* grid-row-gap: 50px; */
+
+    /* define a margin entre as COLUNAS */
+    /* grid-column-gap: 400px; */
+
+    /* define a margin entre as LINHAS e COLUNAS */
+    grid-gap: 20px;
+}
+.r1{
+    background-color: red;
+}
+.r2{
+    background-color: blue;
+}
+.r3{
+    background-color: green;
+}
+
+.react{
+    width: 100px;
+    height: 100px;
+}

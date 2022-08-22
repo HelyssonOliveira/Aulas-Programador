@@ -1,0 +1,40 @@
+body{
+    background: black;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.card{
+    background: url('../img/backgorund.png'), no-repeat;
+    background-size: cover;
+
+    margin: auto;
+    margin-top: 10%;
+
+    padding: 1px 20px;
+    
+    box-sizing: border-box;
+
+    width: 400px;
+    height: 200px;
+}
+.instagram{
+    list-style-image: url('../img/Insta.png');
+}
+.twitter{
+    list-style-image: url('../img/Twitter.png');
+}
+.youtube{
+    list-style-image: url('../img/Youtube.png');
+}
+
+a:hover{
+    color: blue;
+}
+a:hover{
+    color: blue;
+}
+a:hover{
+    color: blue;
+}

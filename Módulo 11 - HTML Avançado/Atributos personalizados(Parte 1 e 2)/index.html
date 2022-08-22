@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>getAttribute = dataset</title>
+</head>
+
+<body>
+    <!-- EXEMPLO 01 -->
+    <p>click na imagem</p>
+    <img id="img" src="./img/img espaço.jpg" alt="" width="100px">
+
+    <!-- EXEMPLO 02 -->
+    <ul id="list1" num="3"></ul>
+
+    <!-- EXEMPLO 03 -->
+    <ol id="list2" data-numero='2'></ol>
+
+    <!-- SCRIPT -->
+    <script>
+        // EXEMPLO 01
+        let imagem = document.getElementById("img")
+        imagem.addEventListener("click", function () {
+            imagem.src = "./img/img nuvens.jpg"
+            //Os códigos de cima e embaixo cumprem o mesmo objetivo
+            imagem.setAttribute("src", "./img/img nuvens.jpg")
+        })
+
+        // EXEMPLO 02
+        let list1 = document.getElementById("list1");
+        let num = list1.getAttribute("num");
+        let conteudo1 = "";
+        for (let i = 0; i < num; i++) {
+            conteudo1 += "<li>" + i + "</li>";
+        }
+        list1.innerHTML = conteudo1;
+
+        // EXEMPLO 03
+        let list2 = document.getElementById("list2");
+        let numero = list2.dataset.numero
+        let conteudo2 = "";
+        for (let i = 0; i < numero; i++) {
+            conteudo2 += "<li>" + i + "</li>";
+        }
+        list2.innerHTML = conteudo2;
+    </script>
+</body>
+
+</html>

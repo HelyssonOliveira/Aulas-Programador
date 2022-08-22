@@ -1,0 +1,23 @@
+{
+	"folders": [
+		{
+			"name": "Módulo 1 - Introdução",
+			"path": ".."
+		},
+		{
+			"name": "Módulo 2 - HTML Básico",
+			"path": "..\\..\\Módulo 2 - HTML Básico"
+		},
+		{
+			"name": "Módulo 3 - CSS Básico",
+			"path": "..\\..\\Módulo 3 - CSS Básico"
+		},
+		{
+			"name": "Módulo 4 - CSS Intermediario",
+			"path": "..\\..\\Módulo 4 - CSS Intermediario"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Módulo 1 - Introdução"
+	}
+}

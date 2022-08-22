@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos - Parte 1 de 3 (DOM Events)</title>
+
+    <style>
+        button {
+            padding: 10px;
+            border-radius: 10px;
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Clieque me mim</h1>
+    <input onchange="changeh1(this)">
+
+    <h1>Clieque me mim</h1>
+    <input oninput="changeh2(this)">
+    <br>
+    <button onclick="hideh1()">
+        Click
+    </button>
+
+    <script>
+        function changeh1(input) {
+            let h1 = document.getElementsByTagName("h1")[0]
+            h1.innerText = input.value
+        }
+        function changeh2(input) {
+            let h1 = document.getElementsByTagName("h1")[1]
+            h1.innerText = input.value
+        }
+
+        function hideh1() {
+            let h1 = document.getElementsByTagName("h1")[1]
+            let h2 = document.getElementsByTagName("h1")[0]
+
+            h1.style.display = "none"
+            h2.style.display = "none"
+
+            let input = document.getElementsByTagName("input")[0]
+            let input2 = document.getElementsByTagName("input")[1]
+
+            input.style.display = "none"
+            input2.style.display = "none"
+        }
+    </script>
+</body>
+
+</html>

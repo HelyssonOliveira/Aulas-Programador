@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #controls {
+            background-color: aqua;
+            border-radius: 20px;
+            padding: 10px;
+            display: flex;
+            justify-content: space-around;
+            width: 400px;
+            text-align: center;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Serve para colocar vários áudios de tipos diferentes 
+        caso o navegador não suporte um tipo de áudio -->
+    <audio id="music">
+        <source src="./Hit Contagiante - Felipe Original feat. Kevin O Chris e JS O Mão de Ouro  (kondzilla.com).mp4">
+        <source src="./Hit Contagiante - Felipe Original feat. Kevin O Chris e JS O Mão de Ouro  (kondzilla.com).flac">
+    </audio>
+
+    <div id="controls">
+        <button class="btn" id="play" onclick="play()"><img src="./img/play.ico"></button>
+        <button class="btn" id="play" onclick="stop()"><img src="./img/stop.ico"></button>
+        <button class="btn" onclick="avancar()"><img src="./img/avançar.ico"></button>
+        <button class="btn" onclick="voltar()"><img src="./img/voltar.ico"></button>
+    </div>
+
+    <script>
+        let controls = document.getElementById("controls")
+        let music = document.getElementById("music")
+
+        function play(){
+            music.play()
+        }
+        function stop() {
+            music.pause()
+        }
+        function avancar() {
+            music.currentTime += 10
+        }
+        function voltar() {
+            music.currentTime -= 10
+        }
+    </script>
+</body>
+
+</html>

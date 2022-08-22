@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- header > p -->
+    <header>
+        <P>Parágrafo filho de Header</P>
+        <p>Parágrafo filho de Header</p>
+        <div>
+            <p>Parágrafo filho da div</p>
+        </div>
+        <p>Parágrafo fora da div</p>
+    </header>
+    <hr>
+    <!-- #head + p -->
+    <header id="head">
+        <p>Parágrafo filho de id:HEAD 1</p>
+        <p>Parágrafo filho de id:HEAD 2</p>
+    </header>
+    <p>Parágrafo fora do id:HEAD 1</p>
+    <p>Parágrafo fora do id:HEAD 2</p>
+    <hr>
+    <!--  -->
+    <div>
+        <p>Parágrafo filho da div 1</p>
+    </div>
+    <p>Parágrafo fora da div 1</p>
+    <p>Parágrafo fora da div 2</p>
+    <hr>
+    <!--  -->
+    <h3 width=50>Parágrafo com width=50</h3>
+    <h3 width=50>Parágrafo com width='50'</h3>
+    <h3 width=50>Parágrafo com width="50"</h3>
+    <hr>
+    <!--  -->
+    <h3 title="termina em 0">Parágrafo com title="termina em 0"</h3>
+    <h3 title="title 1">Parágrafo com title="title 1"</h3>
+    <h3 title="titulo">Parágrafo com title="titulo"</h3>
+    <h3 title="bola">Parágrafo com title="bola"</h3>
+    <hr>
+    <!--  -->
+    <script>
+        /* seleciona o primeiro elemento com atributo 'title'
+          que tenha a palavra 't' */
+        /* let titulo = document.querySelector("[title*=t]")
+        console.log(titulo)*/
+
+        // seleciona todos os 'title' que tenham a palavra 't'
+        let titulos = document.querySelectorAll("[title*=t]")
+        console.log(titulos)
+    </script>
+</body>
+
+</html>

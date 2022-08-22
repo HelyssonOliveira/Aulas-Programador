@@ -1,0 +1,18 @@
+img{
+    margin: 70px 100px 100px 100px;
+    width: 200px;
+    height: 50px;
+    display: inline;
+}
+#img1{
+    transform: rotate(48Deg);
+}
+#img2{
+    transform: scale(2, 1);
+}
+#img3:hover{
+    transform: skew(5Deg, 5deg);
+}
+#img4:hover{
+    transform: skew(0deg, 10deg) scale(0.7, 1);
+}

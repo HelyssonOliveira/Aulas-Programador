@@ -1,0 +1,23 @@
+@keyframes changeColor{
+    0%{background-color: red; width: 100px;}
+    25%{background-color: green;}
+    50%{background-color: yellow; width: 500px;}
+    100%{background-color: blue; width: 200px;}
+}
+.box{
+    width: 200px; height: 200px;
+    border: solid;
+    animation-name: changeColor;
+    animation-duration: 3s;
+    animation-delay: 1s;
+
+    /* Faz com q a animação fique no primeiro frame, no caso 0%(RED) */
+    /* animation-fill-mode: backwards; */
+    
+    /* Faz com q a animação fique no ultimo frame, no caso 100%(BLUE) */
+    /* animation-fill-mode: forwards; */
+    
+    /* Faz com q a animação fique no primeiro e ultimo frame, 
+    junção dos forwards e backwords  */
+    animation-fill-mode: both;
+}

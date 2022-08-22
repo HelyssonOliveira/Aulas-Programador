@@ -1,0 +1,39 @@
+input:focus{
+    color: rgb(0, 4, 255);
+}
+input:hover{
+    background-color: rgb(228, 228, 228);
+}
+
+li{
+    list-style: none;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+}
+/*
+li:first-child{}
+li:last-child{}
+
+li:first-of-type{}
+li:last-of-type{}
+
+li:nth-child(2n){}
+li:nth-last-child(3n){}
+
+li:nth-of-type(2){}
+li:nth-last-of-type(3){}
+*/
+
+/* seleciona números divisiveis por 2 */
+/* li:nth-of-type(2n){
+    background-color: gray;
+} */
+
+/* seleciona números pares */
+li:nth-of-type(even){
+    background-color: gray;
+}
+/* seleciona números impares */
+li:nth-of-type(odd){
+    background-color: beige;
+}

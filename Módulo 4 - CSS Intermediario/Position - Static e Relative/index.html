@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+/*Posição RELATIVA: pega como referência a posição atual do quadrado e o move de acordo 
+com essa posição*/
+        .quadrado{
+            width: 100px;
+            height: 100px;
+        }
+        .quadro{
+            width: 500px;
+            height: 500px;
+            border: 1px solid gray;
+        }
+/* POSITION RELATIVE: move o quadrado vermelho com (left, bottom, right, top)*/
+        .quadrado-red{
+            position: relative;
+            background-color: red;
+            left: 100px;
+        }
+/* POSITION STATIC: move o quadrado azul com (margin-left, margin-bottom, margin-right, margin-top) */        
+        .quadrado-blue{
+            position: static;
+            background-color: blue;
+            margin-left: 100px;
+        }
+        .quadrado-green{
+            position: relative;
+            background-color: green;
+            left: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="quadro">
+        <div class="quadrado quadrado-red"></div>
+        <div class="quadrado quadrado-blue"></div>
+        <div class="quadrado quadrado-green"></div>
+    </div>    
+</body>
+</html>

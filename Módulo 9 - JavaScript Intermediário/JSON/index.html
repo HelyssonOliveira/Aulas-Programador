@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        let a = {
+            nome: "Helysson",
+            idade: 19
+        }
+        let b = JSON.stringify(a) // Transforma Objetos em Strings
+        console.log(a)
+        console.log(b)
+        
+        console.log(" - - -")
+
+        let a2 = '{"nome":"Heytor", "idade":8}'
+        let b2 = JSON.parse(a2) // Transforma Strings em Objetos
+        console.log(a2)
+        console.log(b2)
+        console.log(b2.nome, b2.idade)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

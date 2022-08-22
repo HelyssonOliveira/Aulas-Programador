@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <script>
+        // 1° exemplo
+        
+        onload = function(){
+            let nome = localStorage.getItem("valor")
+            let h1 = document.getElementById("title")   
+            h1.innerHTML = nome
+        }
+
+        function atualizar(element){
+            let valor = element.value
+            console.log(valor)
+
+            let h1 = document.getElementById("title")
+            h1.innerHTML = valor
+
+            localStorage.setItem("valor", valor)
+        }
+       
+
+
+        // 2° exemplo
+        /* let a = {nome: "Helysson", n1: 8}
+        localStorage.setItem("aluno", JSON.stringify(a))
+
+        let b = localStorage.getItem("aluno")
+        console.log(JSON.parse(b))         */
+    </script>
+</head>
+<body>
+    <h1 id="title"></h1>
+    <input type="text" oninput="atualizar(this)">
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Responsividade</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <style type="text/css">
+        *{            
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-size: 1.2rem;
+        }
+        .header {
+            position: relative;
+            
+            margin: auto;
+            width: 80%;
+            height: 200px;
+            
+            background-color: rgb(255, 0, 0);
+        }
+        .content {
+            position: absolute;
+
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            
+            background-color: blue;
+
+            width: 70%;
+            height: 50%;
+            
+            font-size: 6vw;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="content">
+            Hellow World
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+.container{
+    display: flex;
+    /* Muda posição de vários elementos (FILHOS) */
+    align-items: center;
+
+    background-color: darkgrey;
+    height: 480px;
+    color: white;
+}
+
+.r1{
+    /* Muda posição de apenas um elemento (ELE MESMO) */
+    align-self: flex-start;
+    
+    background-color: red;
+}
+.r2{
+    background-color: blue;
+}
+.r3{
+    /* Muda posição de apenas um elemento (ELE MESMO) */
+    align-self: flex-end;
+    background-color: green;
+}
+
+.rect{
+    width: 100px;
+    height: 100px;
+}

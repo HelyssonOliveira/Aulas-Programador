@@ -1,0 +1,17 @@
+.borda{
+    border-width: 5px;
+    border-color: red;
+    border-radius: 10%;
+    border-style: dotted;
+    padding: 5px;
+    margin: 20px;
+}
+.quadrado{
+    width: 200px;
+    height: 200px;
+    background-color: yellow;
+    padding: 10px;
+
+    border-style: dashed;
+}
+

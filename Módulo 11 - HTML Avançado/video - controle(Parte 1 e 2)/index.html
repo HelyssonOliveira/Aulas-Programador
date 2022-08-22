@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+    <style>
+        #container {
+            margin: auto;
+            position: relative;
+            width: 380px;
+        }
+
+        .video {
+            width: 100%;
+        }
+
+        #controle {
+            position: absolute;
+            bottom: 0%;
+
+            width: 100%;
+            background-color: rgba(133, 133, 133, 0.335);
+
+            text-align: center;
+        }
+
+        .btn {
+            display: inline;
+            position: relative;
+            width: 7%;
+            padding: 10px;
+            top: 100%;
+        }
+
+        .btn:active {
+            width: 6.6%;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <video id="video1" class="video" 
+        src="./video/Anime [amv] dancin_v720P-reduzido.mp4">
+        </video>
+
+        <div id="controle">
+            <img class="btn" onclick="retroceder()" src="./icon/voltar.ico" alt="">
+            <img class="btn" onclick="avancar()" src="./icon/avançar.ico" alt="">
+            <img class="btn" onclick="aumentar_vel()" src="./icon/aumentar.ico" alt="">
+            <img class="btn" onclick="diminuir_vel()" src="./icon/decrementar.ico" alt="">
+            <img class="btn" onclick="play()" src="./icon/pausar.ico" alt="">
+            <img class="btn" onclick="stop()" src="./icon/stop.ico" alt="">
+            <img class="btn" onclick="home()" src="./icon/home.ico" alt="">
+        </div>
+    </div>
+
+    <script>
+        let video = document.getElementById("video1")
+
+        function retroceder() {
+            video.currentTime -= 15
+        }
+        function avancar() {
+            video.currentTime += 15
+        }
+        function aumentar_vel() {
+            video.playbackRate += 0.1
+        }
+        function diminuir_vel() {
+            video.playbackRate -= 0.1
+        }
+        function play() {
+            video.play()
+        }
+        function stop() {
+            video.pause()
+        }
+        function home() {
+            video.pause()
+            video.currentTime = 0
+            video.playbackRate = 1
+        }
+        // FAZER OS BOTÕES SUMIREM OU APARECER AO DESLIZAR O MOUSE SOBRE O VÍDEO
+        // let controle = document.getElementById("controle")
+        let container = document.getElementById("container")
+        let btn = document.getElementsByClassName("btn")
+
+        container.addEventListener("mouseout", removerBtn)
+        function removerBtn() {
+            for (let varrerBotao of btn) {
+                varrerBotao.style.display = "none"
+            }
+        }
+        container.addEventListener("mouseover", adicionarBtn)
+        function adicionarBtn() {
+            for (let varrerBotao of btn) {
+                varrerBotao.style.display = "inline"
+            }
+        }
+        // for (let botao of btn){
+        //     botao.style.backgroundColor = "rgb(04, 133, 133)"
+        //     botao.style.borderRadius = "50%"
+        // }
+        // container.addEventListener("mouseout", removerBtn)
+        // function removerBtn() {
+        //     controle.style.display = "none"
+        // }
+        // container.addEventListener("mouseover", adicionarBtn)
+        // function adicionarBtn(){
+        //     controle.style.display = "block"
+        // }
+    </script>
+</body>
+
+</html>

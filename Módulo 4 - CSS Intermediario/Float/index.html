@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /*FLOAT: faz a imagem flutuar em qualquer 
+lateral do próximo elemento*/
+        body {
+            font-size: 1.2rem;
+        }
+
+        /* 1 */
+        #i1 {
+            width: 100px;
+            float: right;
+        }
+
+        #i2 {
+            width: 100px;
+            float: left;
+        }
+
+        /* 2 */
+        #p2 {
+            clear: left;        
+        }
+
+        /* 3 */
+        .div3 {
+            background-color: rgb(160, 152, 152);
+        }
+
+        .img3 {
+            float: left;
+            width: 100px;
+            padding: 0px 10px;
+        }
+
+        /* 4 */
+        li {
+            background-color: rgb(160, 152, 152);
+            list-style-type: none;
+            float: right;
+            padding: 10px;
+            margin-left: 5px;
+            border-radius: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 4 -->
+    <ul>
+        <a href="#"><li>a li</li></a>
+        <a href="#"><li>a li</li></a>
+        <a href="#"><li>a li</li></a>
+    </ul>
+    <br>
+    <!-- 1 -->
+    <img id="i2" src="thumb-1920-702742.jpg" alt="imagem do ACE">
+    <img id="i1" src="thumb-1920-702742.jpg" alt="imagem do ACE">
+    <p id="p1">
+        <!-- 1 --> <br>
+            P1
+    </p>
+    <br>
+    <!-- 2 -->
+    <img id="i1" src="thumb-1920-702742.jpg" alt="imagem do ACE">
+    <img id="i2" src="thumb-1920-702742.jpg" alt="imagem do ACE">
+    <p id="p2">
+        <!-- 2 --> <br>
+            P2
+    </p>
+    <br>
+    <!-- 3 -->
+    <div class="div3">
+        <img class="img3" src="thumb-1920-702742.jpg" alt="imagem do ACE">
+        <img class="img3" src="thumb-1920-702742.jpg" alt="imagem do ACE">
+        <img class="img3" src="thumb-1920-702742.jpg" alt="imagem do ACE">
+        <p id="p3">
+            <!-- 3 --> <br> P3
+        </p>
+    </div>
+    <br>
+
+    <img src="thumb-1920-702742.jpg" alt="imagem do ACE">
+</body>
+
+</html>

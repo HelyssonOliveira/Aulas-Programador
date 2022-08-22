@@ -1,0 +1,41 @@
+p::first-letter{
+    color: red;
+    font-size: 5rem;
+}
+p::first-line{
+    color: blue;
+}
+li{
+    list-style: none;
+    /* list-style-image: url(./img\ espaço.jpg); */
+} 
+
+/* COLOCAR ALGO ANTES, como uma imagem por exemplo */
+li::before{
+    content: "";
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-image: url(./img\ espaço.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+/* COLOCAR ALGO DEPOIS */
+/* li::after{
+    content: "";
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-image: url(./img\ espaço.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+} */
+
+/* Toda vez que selecionar um elemento 
+esse pseudo elemento é executado*/
+p::selection{
+    background: red;
+    color: white;
+}
